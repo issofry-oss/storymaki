@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Storymaki - Transformez vos idées en bandes dessinées et mangas complets grâce à l'intelligence artificielle.">
+    <title>Storymaki | Ton idée. Ton histoire. Ton manga.</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon"><i class="fa-solid fa-pen-nib"></i></span>
+                Storymaki
+            </a>
+            <nav class="nav-links">
+                <a href="#comment-ca-marche">Comment ça marche</a>
+                <a href="#fonctionnalites">Fonctionnalités</a>
+                <a href="#univers">Univers</a>
+                <a href="#tarifs">Tarifs</a>
+                <a href="#faq">FAQ</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="#" class="btn btn-secondary nav-login">Connexion</a>
+                <a href="#" class="btn btn-primary">Créer mon histoire</a>
+                <button class="mobile-menu-toggle" aria-label="Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero-container">
+                <div class="hero-content fade-in-up">
+                    <div class="badge">✨ Nouveau : L'IA crée ton manga</div>
+                    <h1 class="hero-title">Ton idée. Ton histoire. <span class="highlight">Ton manga.</span></h1>
+                    <p class="hero-subtitle">Transforme une simple phrase en une véritable bande dessinée. 
+                    <br><strong>Aucun dessin. Aucun scénario compliqué. Juste ton imagination.</strong></p>
+                    <div class="hero-cta-group">
+                        <a href="#" class="btn btn-primary btn-large">Créer mon histoire gratuitement</a>
+                        <a href="#comment-ca-marche" class="btn btn-outline btn-large">Découvrir comment ça marche</a>
+                    </div>
+                </div>
+                
+                <div class="hero-visual fade-in-up delay-1">
+                    <div class="glass-panel app-mockup">
+                        <div class="mockup-header">
+                            <div class="dots">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <div class="mockup-title">Création en cours...</div>
+                        </div>
+                        <div class="mockup-body">
+                            <div class="prompt-box">
+                                <span class="prompt-label">Ton idée :</span>
+                                <p>"Une jeune apprentie mage découvre un grimoire interdit dans la bibliothèque de l'académie..."</p>
+                            </div>
+                            <div class="generation-pipeline">
+                                <div class="step active"><i class="fa-solid fa-wand-magic-sparkles"></i> Scénario</div>
+                                <div class="step active"><i class="fa-solid fa-user-astronaut"></i> Personnages</div>
+                                <div class="step loading"><i class="fa-solid fa-palette"></i> Planches</div>
+                            </div>
+                            <div class="manga-preview">
+                                <div class="manga-panel panel-1"></div>
+                                <div class="manga-panel panel-2"></div>
+                                <div class="manga-panel panel-3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Comment ça marche -->
+        <section id="comment-ca-marche" class="how-it-works section-padding">
+            <div class="container">
+                <div class="section-header text-center fade-in-up">
+                    <h2>Comment ça marche ?</h2>
+                    <p>En trois étapes simples, ton imagination prend vie sur la page.</p>
+                </div>
+                
+                <div class="steps-container">
+                    <div class="step-card fade-in-up">
+                        <div class="step-number">01</div>
+                        <h3>Choisis ton thème</h3>
+                        <p>Sélectionne l'univers de ton histoire parmi nos nombreux genres : Action, Romance, Fantasy...</p>
+                    </div>
+                    <div class="step-card fade-in-up delay-1">
+                        <div class="step-number">02</div>
+                        <h3>Écris ton idée</h3>
+                        <p>Rédige un simple prompt décrivant ton concept. L'IA s'occupe de structurer le récit.</p>
+                    </div>
+                    <div class="step-card fade-in-up delay-2">
+                        <div class="step-number">03</div>
+                        <h3>Génère ton histoire</h3>
+                        <p>Storymaki crée instantanément les personnages, les dialogues et les planches illustrées.</p>
+                    </div>
+                </div>
+
+                <div class="demo-box fade-in-up delay-3">
+                    <div class="demo-prompt">
+                        <div class="demo-icon"><i class="fa-solid fa-keyboard"></i></div>
+                        <p>"Une jeune fille découvre qu'elle peut voyager dans le temps et rencontre dans le passé un garçon qui semble connaître son secret."</p>
+                    </div>
+                    <div class="demo-arrow"><i class="fa-solid fa-arrow-down"></i></div>
+                    <div class="demo-result">
+                        <div class="demo-manga-pages">
+                            <!-- Page Gauche -->
+                            <div class="manga-page">
+                                <div class="manga-panel-img panel-tall">
+                                    <img src="assets/manga_panel_a_1788635721131.jpg" alt="Yuki découvre une montre lumineuse dans le grenier" loading="lazy">
+                                    <div class="speech-bubble bubble-top-left">Ha... qu'est-ce que c'est ?!</div>
+                                </div>
+                                <div class="manga-row">
+                                    <div class="manga-panel-img">
+                                        <img src="assets/manga_panel_b_1788635736113.jpg" alt="Yuki aspirée dans un tourbillon temporel" loading="lazy">
+                                        <div class="speech-bubble bubble-bottom-right">Je... je voyage dans le temps !</div>
+                                    </div>
+                                    <div class="manga-panel-img">
+                                        <img src="assets/manga_panel_c_1788635750162.jpg" alt="Yuki arrive dans une rue pavée du XIXe siècle" loading="lazy">
+                                        <div class="speech-bubble bubble-top-right">Où... où suis-je ?</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Page Droite -->
+                            <div class="manga-page">
+                                <div class="manga-panel-img panel-tall">
+                                    <img src="assets/manga_panel_d_1788635761721.jpg" alt="Un jeune homme la remarque et s'approche" loading="lazy">
+                                    <div class="speech-bubble bubble-top-left">Hé... tu n'es pas d'ici, toi.</div>
+                                </div>
+                                <div class="manga-panel-img panel-closeup">
+                                    <img src="assets/manga_panel_e_1788635771452.jpg" alt="Regard mystérieux du garçon" loading="lazy">
+                                    <div class="speech-bubble bubble-bottom-left">...Il semble me connaître.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Pipeline (De ton idée à une véritable histoire) -->
+        <section class="pipeline section-padding bg-light">
+            <div class="container">
+                <div class="section-header text-center fade-in-up">
+                    <h2>De ton idée à une véritable histoire</h2>
+                    <p>Notre IA ne se contente pas de dessiner. Elle tisse un récit cohérent, crée des personnages profonds et met en scène l'action.</p>
+                </div>
+                
+                <div class="pipeline-visual fade-in-up delay-1">
+                    <div class="pipe-node"><i class="fa-solid fa-lightbulb"></i><span>Prompt</span></div>
+                    <div class="pipe-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+                    <div class="pipe-node"><i class="fa-solid fa-book-open"></i><span>Histoire</span></div>
+                    <div class="pipe-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+                    <div class="pipe-node"><i class="fa-solid fa-users"></i><span>Personnages</span></div>
+                    <div class="pipe-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+                    <div class="pipe-node"><i class="fa-solid fa-clapperboard"></i><span>Scènes</span></div>
+                    <div class="pipe-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+                    <div class="pipe-node"><i class="fa-solid fa-comment-dots"></i><span>Dialogues</span></div>
+                    <div class="pipe-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+                    <div class="pipe-node final"><i class="fa-solid fa-scroll"></i><span>Pages</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Fonctionnalités -->
+        <section id="fonctionnalites" class="features section-padding">
+            <div class="container">
+                <div class="section-header text-center fade-in-up">
+                    <h2>Tout ce dont tu as besoin pour créer</h2>
+                    <p>Des outils puissants cachés derrière une interface extrêmement simple.</p>
+                </div>
+                
+                <div class="features-grid">
+                    <div class="feature-card fade-in-up">
+                        <div class="icon-wrapper"><i class="fa-solid fa-users-viewfinder"></i></div>
+                        <h3>Personnages cohérents</h3>
+                        <p>L'IA maintient l'apparence et le style de tes personnages tout au long de l'histoire.</p>
+                    </div>
+                    <div class="feature-card fade-in-up delay-1">
+                        <div class="icon-wrapper"><i class="fa-solid fa-book-journal-whills"></i></div>
+                        <h3>Histoires et chapitres</h3>
+                        <p>Gère ton intrigue sur le long terme avec un système de chapitrage intelligent.</p>
+                    </div>
+                    <div class="feature-card fade-in-up delay-2">
+                        <div class="icon-wrapper"><i class="fa-solid fa-comments"></i></div>
+                        <h3>Dialogues générés</h3>
+                        <p>Des bulles de texte placées automatiquement avec des dialogues percutants et naturels.</p>
+                    </div>
+                    <div class="feature-card fade-in-up">
+                        <div class="icon-wrapper"><i class="fa-solid fa-layer-group"></i></div>
+                        <h3>Pages de BD et manga</h3>
+                        <p>Mise en page dynamique et découpage professionnel des planches selon l'action.</p>
+                    </div>
+                    <div class="feature-card fade-in-up delay-1">
+                        <div class="icon-wrapper"><i class="fa-solid fa-pen-ruler"></i></div>
+                        <h3>Modification des scènes</h3>
+                        <p>Tu n'aimes pas un angle ou une expression ? Régénère ou modifie une case en un clic.</p>
+                    </div>
+                    <div class="feature-card fade-in-up delay-2">
+                        <div class="icon-wrapper"><i class="fa-solid fa-infinity"></i></div>
+                        <h3>Suites et nouveautés</h3>
+                        <p>Prolonge ton univers avec des spin-offs, de nouveaux chapitres et des suites infinies.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Univers -->
+        <section id="univers" class="univers section-padding bg-dark text-white">
+            <div class="container">
+                <div class="section-header text-center fade-in-up">
+                    <h2>Choisis ton univers</h2>
+                    <p>Quel que soit ton style préféré, Storymaki s'adapte à ton imagination.</p>
+                </div>
+                
+                <div class="univers-grid fade-in-up delay-1">
+                    <div class="univers-card">
+                        <div class="emoji">❤️</div>
+                        <h3>Romance</h3>
+                    </div>
+                    <div class="univers-card">
+                        <div class="emoji">⚔️</div>
+                        <h3>Action</h3>
+                    </div>
+                    <div class="univers-card">
+                        <div class="emoji">🧙</div>
+                        <h3>Fantasy</h3>
+                    </div>
+                    <div class="univers-card">
+                        <div class="emoji">🚀</div>
+                        <h3>Science-fiction</h3>
+                    </div>
+                    <div class="univers-card">
+                        <div class="emoji">🔎</div>
+                        <h3>Mystère</h3>
+                    </div>
+                    <div class="univers-card">
+                        <div class="emoji">🌍</div>
+                        <h3>Aventure</h3>
+                    </div>
+                    <div class="univers-card">
+                        <div class="emoji">😂</div>
+                        <h3>Comédie</h3>
+                    </div>
+                    <div class="univers-card">
+                        <div class="emoji">📚</div>
+                        <h3>Éducatif</h3>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-5 fade-in-up delay-2">
+                    <a href="#" class="btn btn-primary btn-large">Créer mon histoire</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Mode Éducatif -->
+        <section class="education section-padding">
+            <div class="container">
+                <div class="edu-grid">
+                    <div class="edu-content fade-in-up">
+                        <div class="badge badge-accent">Mode Éducatif</div>
+                        <h2>Apprendre autrement</h2>
+                        <p>Storymaki n'est pas seulement pour le divertissement. C'est un outil puissant pour l'apprentissage. Transforme des concepts complexes en aventures captivantes.</p>
+                        
+                        <div class="edu-example glass-panel">
+                            <span class="label">Thème : Sciences</span>
+                            <p class="prompt-text">"Explique le système solaire à travers l'aventure de deux enfants qui voyagent de planète en planète."</p>
+                        </div>
+                        
+                        <ul class="edu-features">
+                            <li><i class="fa-solid fa-check text-primary"></i> Une aventure immersive</li>
+                            <li><i class="fa-solid fa-check text-primary"></i> Des personnages attachants</li>
+                            <li><i class="fa-solid fa-check text-primary"></i> Des explications claires</li>
+                            <li><i class="fa-solid fa-check text-primary"></i> Des quiz ou activités intégrés</li>
+                        </ul>
+                    </div>
+                    <div class="edu-visual fade-in-up delay-1">
+                        <div class="edu-mockup">
+                            <div class="edu-panel top-panel">
+                                <div class="bubble">"Voici Jupiter, la plus grande planète !"</div>
+                            </div>
+                            <div class="edu-panel bottom-panel">
+                                <div class="quiz-box">
+                                    <strong>Quiz :</strong> Quelle est la particularité de Jupiter ?
+                                    <div class="options">
+                                        <span>Gazeuse</span>
+                                        <span>Rocheuse</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Continuité -->
+        <section class="continuity section-padding bg-light">
+            <div class="container">
+                <div class="section-header text-center fade-in-up">
+                    <h2>Ton histoire peut continuer</h2>
+                    <p class="subtitle-large">Une idée peut devenir une histoire.<br><span class="highlight">Une histoire peut devenir une série.</span></p>
+                </div>
+                
+                <div class="chat-interface glass-panel fade-in-up delay-1">
+                    <div class="chat-messages">
+                        <div class="message system">Chapitre 1 terminé. Que souhaitez-vous faire ?</div>
+                        <div class="command-pills">
+                            <button class="pill">Continue avec le chapitre 2 <i class="fa-solid fa-arrow-right"></i></button>
+                            <button class="pill">Ajoute un nouveau personnage <i class="fa-solid fa-user-plus"></i></button>
+                            <button class="pill">Change cette scène <i class="fa-solid fa-pen"></i></button>
+                            <button class="pill">Fais évoluer l'histoire vers une confrontation <i class="fa-solid fa-bolt"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Tarifs -->
+        <section id="tarifs" class="pricing section-padding">
+            <div class="container">
+                <div class="section-header text-center fade-in-up">
+                    <h2>Des tarifs simples</h2>
+                    <p>Commence gratuitement et évolue selon tes besoins créatifs.</p>
+                </div>
+                
+                <div class="pricing-grid">
+                    <!-- Gratuit -->
+                    <div class="price-card fade-in-up">
+                        <div class="price-header">
+                            <h3>Gratuit</h3>
+                            <div class="price">0 FCFA<span>/mois</span></div>
+                            <p>Pour tester tes idées.</p>
+                        </div>
+                        <ul class="price-features">
+                            <li><i class="fa-solid fa-check"></i> 1 histoire par mois</li>
+                            <li><i class="fa-solid fa-check"></i> 10 pages maximum</li>
+                            <li><i class="fa-solid fa-check"></i> Filigrane Storymaki</li>
+                            <li><i class="fa-solid fa-check"></i> Résolution standard</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline btn-full">Commencer</a>
+                    </div>
+                    
+                    <!-- Creator -->
+                    <div class="price-card featured fade-in-up delay-1">
+                        <div class="popular-badge">Populaire</div>
+                        <div class="price-header">
+                            <h3>Creator</h3>
+                            <div class="price">5500 FCFA<span>/mois</span></div>
+                            <p>Pour les créateurs réguliers.</p>
+                        </div>
+                        <ul class="price-features">
+                            <li><i class="fa-solid fa-check"></i> Histoires illimitées</li>
+                            <li><i class="fa-solid fa-check"></i> Jusqu'à 50 pages / chapitre</li>
+                            <li><i class="fa-solid fa-check"></i> Sans filigrane</li>
+                            <li><i class="fa-solid fa-check"></i> Haute résolution</li>
+                            <li><i class="fa-solid fa-check"></i> Modification de scènes</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary btn-full">Devenir Creator</a>
+                    </div>
+                    
+                    <!-- Studio -->
+                    <div class="price-card fade-in-up delay-2">
+                        <div class="price-header">
+                            <h3>Studio</h3>
+                            <div class="price">8500 FCFA<span>/mois</span></div>
+                            <p>Pour des séries complètes.</p>
+                        </div>
+                        <ul class="price-features">
+                            <li><i class="fa-solid fa-check"></i> Tout de Creator</li>
+                            <li><i class="fa-solid fa-check"></i> Chapitres illimités</li>
+                            <li><i class="fa-solid fa-check"></i> Export PDF/CBZ/EPUB</li>
+                            <li><i class="fa-solid fa-check"></i> Personnages persistants avancés</li>
+                            <li><i class="fa-solid fa-check"></i> Mode éducatif complet</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline btn-full">Passer Studio</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Témoignages -->
+        <section class="testimonials section-padding bg-light">
+            <div class="container">
+                <div class="section-header text-center fade-in-up">
+                    <h2>Ils créent avec Storymaki</h2>
+                </div>
+                
+                <div class="testimonials-grid">
+                    <div class="testi-card glass-panel fade-in-up">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="quote">"J'ai des dizaines d'idées d'histoires mais je ne sais absolument pas dessiner. Storymaki a débloqué ma créativité, mon premier manga est incroyable !"</p>
+                        <div class="author">
+                            <div class="avatar" style="background-color: #ffd166;">T</div>
+                            <div class="author-info">
+                                <strong>Thomas D.</strong>
+                                <span>Auteur amateur</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testi-card glass-panel fade-in-up delay-1">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="quote">"J'utilise le mode éducatif pour mes cours d'histoire. Mes élèves sont beaucoup plus captivés quand je leur raconte la Révolution sous forme de manga interactif."</p>
+                        <div class="author">
+                            <div class="avatar" style="background-color: #ef476f;">S</div>
+                            <div class="author-info">
+                                <strong>Sophie L.</strong>
+                                <span>Enseignante au collège</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testi-card glass-panel fade-in-up delay-2">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="quote">"La cohérence des personnages entre les chapitres est bluffante. Je publie ma série sur Webtoon grâce à Storymaki depuis 3 mois."</p>
+                        <div class="author">
+                            <div class="avatar" style="background-color: #118ab2;">M</div>
+                            <div class="author-info">
+                                <strong>Marc V.</strong>
+                                <span>Créateur Studio</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: CTA Final -->
+        <section class="final-cta section-padding">
+            <div class="container text-center">
+                <div class="cta-box glass-panel fade-in-up">
+                    <h2>Ton imagination n'a pas besoin de savoir dessiner.</h2>
+                    <p>Tu as une idée ? C'est suffisant pour commencer.</p>
+                    <a href="#" class="btn btn-primary btn-large mt-4">Créer mon premier manga gratuitement</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: FAQ -->
+        <section id="faq" class="faq section-padding">
+            <div class="container">
+                <div class="section-header text-center fade-in-up">
+                    <h2>Questions fréquentes</h2>
+                </div>
+                
+                <div class="accordion-container fade-in-up delay-1">
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            Dois-je savoir dessiner pour utiliser Storymaki ?
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Absolument pas ! L'IA de Storymaki s'occupe de toutes les illustrations. Il vous suffit d'écrire ce que vous avez en tête, et notre technologie transforme vos mots en dessins professionnels.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            Dois-je écrire un scénario détaillé case par case ?
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Non, c'est toute la magie de la plateforme. Vous pouvez simplement écrire une idée globale (ex: "Une enquête dans un univers cyberpunk") et l'IA se charge de construire le scénario, de créer les personnages, et de découper l'action case par case.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            Quels genres et styles sont disponibles ?
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Nous supportons une grande variété de genres : Romance, Action, Fantasy, Sci-Fi, Horreur, Comédie, etc. Visuellement, l'IA peut s'adapter au style manga (Shonen, Shojo), comics américain ou BD franco-belge.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            Puis-je créer des histoires en plusieurs chapitres ?
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Oui, avec nos offres Creator et Studio, vous pouvez générer des suites, et l'IA garde en mémoire l'apparence de vos personnages et le contexte de l'histoire précédente.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            Comment fonctionne le mode éducatif ?
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Il vous permet de transformer un sujet de cours ou une notion complexe en une aventure illustrée. L'IA intègre des explications pédagogiques et peut même générer de petits quiz entre les pages.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            Puis-je modifier l'histoire une fois générée ?
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Tout à fait. Si une case, un dialogue ou une scène ne vous plaît pas, vous pouvez demander à l'IA de la modifier ou de la régénérer avec de nouvelles instructions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-icon"><i class="fa-solid fa-pen-nib"></i></span>
+                        Storymaki
+                    </a>
+                    <p class="tagline">Imagine. Écris. Crée.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#"><i class="fa-brands fa-discord"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Produit</h4>
+                    <ul>
+                        <li><a href="#fonctionnalites">Fonctionnalités</a></li>
+                        <li><a href="#univers">Univers</a></li>
+                        <li><a href="#tarifs">Tarifs</a></li>
+                        <li><a href="#">Mode Éducatif</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Ressources</h4>
+                    <ul>
+                        <li><a href="#">Tutoriels</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Galerie communautaire</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Entreprise</h4>
+                    <ul>
+                        <li><a href="#">À propos</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Carrières</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Storymaki. Tous droits réservés.</p>
+                <div class="legal-links">
+                    <a href="#">Conditions d'utilisation</a>
+                    <a href="#">Politique de confidentialité</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
